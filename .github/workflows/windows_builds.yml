@@ -72,7 +72,7 @@ jobs:
         with:
           scons-flags: ${{ env.SCONS_FLAGS }} windows_subsystem=console d3d12=${{ steps.d3d12-sdk.outputs.D3D12_ENABLED }}
           platform: windows
-          target: template_debug 
+          target: template_debug
           arch: x86_64
 
       - name: Save Godot build cache
